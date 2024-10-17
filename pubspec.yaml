@@ -1,0 +1,26 @@
+name: uxf_cli
+description: A Command line tool to download packages from https://uxflutter.com
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.5.3
+
+executables:
+  uxf_cli:
+
+# Add regular dependencies here.
+dependencies:
+  archive: ^3.6.1
+  args: ^2.6.0
+  http: ^1.2.2
+  path: ^1.9.0
+  # path: ^1.8.0
+  tiny_storage:
+    git:
+      url: https://github.com/LUK3D/tiny_storage.git
+      ref: master
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.24.0
