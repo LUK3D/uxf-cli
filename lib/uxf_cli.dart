@@ -129,7 +129,7 @@ Future<void> downloadAndExtractPackage(
     }
   } catch (e) {
     if (e is HandshakeException) {
-      print('Unable to connect with http://localhost:3002');
+      print('Unable to connect with https://registry.uxflutter.com');
       return;
     }
     print('Error processing package: $e');
