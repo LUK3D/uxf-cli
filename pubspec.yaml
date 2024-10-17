@@ -8,7 +8,7 @@ environment:
   sdk: ^3.5.3
 
 executables:
-  ufx: 
+  uxf: 
 
 # Add regular dependencies here.
 dependencies:
