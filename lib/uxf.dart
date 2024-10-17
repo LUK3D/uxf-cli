@@ -49,7 +49,7 @@ void main(List<String> arguments) async {
     print("✅ Subscription id Updated successfully!");
   } else if (results['help']) {
     print(
-        'Usage: dart run uxf_cli.dart -p <package_name> [--path <installation_path>]');
+        'Usage: dart run uxf.dart -p <package_name> [--path <installation_path>]');
     print(parser.usage);
   }
   Future.delayed(Duration(seconds: 1), () {
@@ -85,14 +85,14 @@ Future<void> downloadAndExtractPackage(
       final tempZipFile = File(path.join(targetDir.path, '$packageName.zip'));
       final sink = tempZipFile.openWrite();
 
-      final contentLength = response.contentLength ?? 0;
-      var downloadedBytes = 0;
+      // final contentLength = response.contentLength ?? 0;
+      // var downloadedBytes = 0;
 
       await for (var chunk in response.stream) {
         sink.add(chunk);
-        downloadedBytes += chunk.length;
-        final progress =
-            (downloadedBytes / contentLength * 100).toStringAsFixed(2);
+        // downloadedBytes += chunk.length;
+        // final progress =
+        //     (downloadedBytes / contentLength * 100).toStringAsFixed(2);
         // stdout.write('\rDownloading: $progress% complete');
       }
 
