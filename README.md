@@ -14,6 +14,13 @@ variables.
 Follow the steps on this link:
 [How to add folder to `Path` environment variable](https://stackoverflow.com/questions/44272416/how-to-add-a-folder-to-path-environment-variable-in-windows-10-with-screensho)
 
+## Apply a subscription id
+
+Go to [uxflutter.com](https://uxflatter.com) and copy your subscription ID (you
+get a free one when creating an account).
+
+Apply it by running: `uxf auth -s <subscription_id_here>`
+
 ## Installing a UxFlutter pacakge:
 
 Now that you have ufx installed, you can add a new package Install a package
