@@ -39,7 +39,7 @@ void main(List<String> arguments) async {
     'list',
     abbr: 'l',
     negatable: false,
-    help: 'Show usage information',
+    help: 'Show the current subscription ID',
   );
 
   final results = parser.parse(arguments);
