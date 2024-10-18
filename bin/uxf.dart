@@ -35,6 +35,12 @@ void main(List<String> arguments) async {
     negatable: false,
     help: 'Show usage information',
   );
+  parser.addFlag(
+    'list',
+    abbr: 'l',
+    negatable: false,
+    help: 'Show usage information',
+  );
 
   final results = parser.parse(arguments);
 
@@ -47,6 +53,9 @@ void main(List<String> arguments) async {
     final subscriptionId = results['sid'];
     storage.set("sid", subscriptionId);
     print("✅ Subscription id Updated successfully!");
+  } else if (results['list']) {
+    print("Your current session id is:");
+    print(storage.get("sid"));
   } else if (results['help']) {
     print(
         'Usage: dart run uxf.dart -p <package_name> [--path <installation_path>]');
