@@ -70,7 +70,6 @@ Future<void> downloadAndExtractPackage(
     String packageName, String? installPath, String? token) async {
   print('Downloading package: $packageName');
 
-  // Replace this URL with your actual package repository URL
   final url = 'https://registry.uxflutter.com/packages/$packageName';
   // final url = 'http://localhost:3002/packages/$packageName';
 
